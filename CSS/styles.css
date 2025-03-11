@@ -1,0 +1,120 @@
+/* Fondo gris muy oscuro */
+body, .bg-dark {
+    background-color: #1c1c1c !important;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Texto blanco suave */
+.text-white {
+    color: #f5f5f5 !important;
+}
+
+/* Títulos en fuente moderna y texto verde neón */
+.text-neon {
+    font-family: 'Zen Dots', sans-serif;
+    color: #0cff00 !important;
+}
+
+/* Fuente Zen Dots para Navbar y botones */
+.font-zen-dots {
+    font-family: 'Zen Dots', sans-serif;
+}
+
+/* Texto normal */
+.text-normal {
+    font-size: 1.1rem;
+}
+
+/* Botones verde neón */
+.btn-neon {
+    color: #1c1c1c;
+    background-color: #0cff00;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-family: 'Zen Dots', sans-serif;
+}
+
+.btn-neon:hover {
+    color: #0cff00;
+    background-color: #000;
+    border: 1px solid #0cff00;
+}
+
+/* Estilo de las cartas */
+.card {
+    background-color: #1c1c1c;
+    border: 1px solid #0cff00;
+}
+
+.card .card-title {
+    color: #0cff00;
+}
+
+.card .card-text {
+    color: #f5f5f5;
+}
+
+.card .btn-neon {
+    color: #1c1c1c;
+    background-color: #0cff00;
+}
+
+.card .btn-neon:hover {
+    color: #0cff00;
+    background-color: #000;
+}
+
+/* Separación entre contenido y pie de página */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* Iconos */
+.fa-lg {
+    font-size: 1.5rem;
+}
+
+.fa-2x {
+    font-size: 2rem;
+}
+
+.fa-instagram:hover {
+    color: #0cff00;
+}
+
+.fa-github:hover {
+    color: #0cff00;
+}
+
+.fa-linkedin:hover {
+    color: #0cff00;
+}
+
+.fa-itch-io:hover {
+    color: #0cff00;
+}
+
+/* Navbar fija */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Espacio para compensar la navbar fija */
+.mt-5.pt-5 {
+    margin-top: 5rem !important;
+    padding-top: 2rem !important;
+}
+
+/* Estilo de la opción activa en el navbar */
+.nav-link.active {
+    color: #0cff00 !important;
+    border-bottom: 2px solid #0cff00;
+}
