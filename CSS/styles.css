@@ -118,3 +118,28 @@ body, .bg-dark {
     color: #0cff00 !important;
     border-bottom: 2px solid #0cff00;
 }
+
+/* Estilo personalizado para la imagen */
+.custom-img {
+    max-width: 70%; /* Escala la imagen al ancho máximo disponible */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilo personalizado para las imágenes de la sección "About" */
+.about-img {
+    max-width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura según tus necesidades */
+    border-radius: 15px; /* Bordes redondeados */
+    object-fit: scale-down; /* Escala la imagen sin recortar */
+}
+
+/* Estilo personalizado para las imágenes de las tarjetas */
+.custom-card-img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 5%;
+}
+
+
