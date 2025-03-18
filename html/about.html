@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí - Mi Portafolio de Videojuegos</title>
+    <title>About me</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
-    <!-- Font Awesome para los iconos -->
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- Estilos Personalizados -->
+    <!-- Custom Styles -->
     <link href="../CSS/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <!-- Navbar Fija -->
+
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand font-zen-dots" href="index.html">Portafolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,80 +27,103 @@
                     <a class="nav-link font-zen-dots" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-zen-dots active text-neon" href="about.html">About Me</a>
+                    <a class="nav-link font-zen-dots active text-neon" href="./about.html">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-zen-dots" href="projects.html">Projects</a>
+                    <a class="nav-link font-zen-dots" href="./projects.html">Projects</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Espacio para compensar la navbar fija -->
+    <!-- Spacer for Navbar -->
     <div class="mt-5 pt-5"></div>
 
-   <!-- Sección de introducción -->
-<div class="container text-white mt-5 mb-5 flex-grow-1">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
-            <h2 class="text-neon">About Me</h2>
-            <p class="lead text-normal">Hola, soy Edgar, un desarrollador de videojuegos con sede en Ciudad de México. Tengo una pasión profunda por crear experiencias interactivas y cautivadoras para los jugadores. Con años de experiencia en el desarrollo de videojuegos, me especializo en diseño de juegos, programación y producción. He trabajado en diversos proyectos, desde pequeños juegos indie hasta grandes producciones, siempre enfocándome en la calidad y la innovación.</p>
-        </div>
-        <div class="col-md-6 text-center">
-            <!-- Imagen de ejemplo -->
-            <img src="https://media.discordapp.net/attachments/1348869611470192735/1348869678470139957/Imagen_de_WhatsApp_2025-02-19_a_las_00.00.27_d069bebd.jpg?ex=67d10848&is=67cfb6c8&hm=5d222e7360fbed7a9cc91bd9536c2bb72c440e53554b805d6feca367f92c2c8d&=&format=webp&width=642&height=856" class="img-fluid about-img" alt="Foto de Edgar">
-        </div>
-    </div>
-</div>
-
-<!-- Sección de proyectos destacados -->
-<div class="container text-white mt-5">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 text-center">
-            <!-- Imagen de ejemplo -->
-            <img src="https://via.placeholder.com/300" class="img-fluid about-img" alt="Ejemplo de Proyecto">
-        </div>
-        <div class="col-md-6">
-            <h2 class="text-neon">Proyectos Destacados</h2>
-            <p class="text-normal">He trabajado en una variedad de proyectos interesantes que me han permitido perfeccionar mis habilidades y explorar nuevas ideas. Algunos de mis proyectos más destacados incluyen un juego de aventuras indie, una aplicación de realidad aumentada y una plataforma de educación interactiva. Cada proyecto me ha proporcionado valiosas experiencias y conocimientos que aplico en cada nuevo desafío que enfrento.</p>
-        </div>
-    </div>
-</div>
-
-<!-- Sección de habilidades -->
-<div class="container text-white mt-5">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
-            <h2 class="text-neon">Habilidades</h2>
-            <p class="text-normal">Mis habilidades abarcan una amplia gama de áreas en el desarrollo de videojuegos. Soy competente en lenguajes de programación como C++, C# y Python, y tengo experiencia en el uso de motores de juego como Unity y Unreal Engine. También tengo habilidades en diseño gráfico, creación de modelos 3D y animación, lo que me permite llevar mis ideas desde el concepto hasta la realidad jugable.</p>
-        </div>
-        <div class="col-md-6 text-center">
-            <!-- Imagen de ejemplo -->
-            <img src="https://via.placeholder.com/300" class="img-fluid about-img" alt="Habilidades de Edgar">
+    <!-- About Me Section -->
+    <div class="container text-white mt-5 mb-5 flex-grow-1">
+        <div class="row">
+            <!-- Image Container -->
+            <div class="about-img-container">
+                <img src="https://media.discordapp.net/attachments/1348869611470192735/1348869678470139957/Imagen_de_WhatsApp_2025-02-19_a_las_00.00.27_d069bebd.jpg?ex=67daeb88&is=67d99a08&hm=9ffda5a6f04ad9a3a3204b4cb283897b1865c901d27840171b866609d313ccff&=&format=webp&width=600&height=800" 
+                     class="img-fluid about-img" 
+                     alt="Foto de Edgar">
+            </div>
+        
+            <!-- Text Content -->
+            <div class="about-content">
+                <h3 class="text-neon">About me</h3>
+                <div class="neon-box p-3 mb-4">
+                    <p class="text-normal">
+                        I am a developer from the port city of Veracruz, Mexico. I specialize in video game and interactive application development. I have worked on projects involving game mechanics implementation, optimization in Unity, programming in C#, and mobile application development using Java and XML.
+                    </p>
+                </div>
+                <h3 class="text-neon">My Philosophy</h3>
+                <div class="neon-box p-3 mb-4">
+                    <p>
+                        I aim to apply my knowledge in professional environments where I can continue to grow and contribute value. Collaboration, creativity, and continuous learning are the cornerstones of my development process.
+                    </p>
+                </div>
+                <h3 class="text-neon">Hobbies</h3>
+                <div class="neon-box p-3">
+                    <p class="text-normal">
+                        I am a very calm person who enjoys spending a lot of time at home. However, I truly enjoy taking walks on the beach. I love practicing and competing in martial arts, and I have a great passion for playing horror video games as well as games that can be enjoyed with family and friends. I also deeply enjoy reading about history and cosmic horror.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-
-    <!-- Pie de Página -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-5 mt-auto">
         <div class="container text-center">
-            <h5 class="text-neon mb-4">Contáctame</h5>
-            <p><a href="mailto:edgarpinto010203@gmail.com" class="text-white"><i class="fas fa-envelope fa-lg"></i> edgarpinto010203@gmail.com</a></p>
+            <h5 class="text-neon mb-4">Contact me</h5>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mnnpnpzd" method="POST" class="text-left mx-auto mb-4" style="max-width: 400px;">
+                <div class="form-group">
+                    <label for="name" class="text-neon">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-neon">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-neon">Message</label>
+                    <textarea name="message" id="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-neon btn-block">Send</button>
+            </form>
+
+           
+
+            <!-- Social Media Links -->
             <div class="d-flex justify-content-center">
-                <a href="https://www.instagram.com/tuinstagram" class="text-white mx-4"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://github.com/tugithub" class="text-white mx-4"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/tulinkedin" class="text-white mx-4"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://itch.io/profile/tuitchio" class="text-white mx-4"><i class="fab fa-itch-io fa-2x"></i></a>
+                <a href="https://www.instagram.com/edgarpinto03?igsh=MThvanJrMWEyd2Q0dA==" class="text-white mx-4"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://github.com/EdgarPinto38" class="text-white mx-4"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/edgar-pinto-0a25232b5/" class="text-white mx-4"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://phantom-code.itch.io/" class="text-white mx-4"><i class="fab fa-itch-io fa-2x"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS y dependencias -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Font Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const aboutSection = document.querySelector('.container');
+            const aboutImage = document.querySelector('.about-img');
+
+            if (aboutSection && aboutImage) {
+                aboutImage.style.height = aboutSection.offsetHeight + "px";
+                aboutImage.style.width = "100%";
+                aboutImage.style.objectFit = "cover";
+            }
+        });
+    </script>
 </body>
 </html>

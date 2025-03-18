@@ -3,75 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Mi Portafolio de Videojuegos</title>
+    <title>Home</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
-    <!-- Font Awesome para los iconos -->
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- Estilos Personalizados -->
-    <link href="CSS/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./CSS/styles.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <!-- Navbar Fija -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand font-zen-dots" href="#">Portafolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link font-zen-dots active text-neon" href="#">Home</a>
+                    <a class="nav-link font-zen-dots active text-neon" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-zen-dots" href="html/about.html">About Me</a>
+                    <a class="nav-link font-zen-dots" href="./html/about.html">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-zen-dots" href="html/projects.html">Projects</a>
+                    <a class="nav-link font-zen-dots" href="./html/projects.html">Projects</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Espacio para compensar la navbar fija -->
+    <!-- Spacer for fixed navbar -->
     <div class="mt-5 pt-5"></div>
 
-    <!-- Contenedor principal -->
+    <!-- Main Content -->
     <div class="container text-white mt-5 mb-5 flex-grow-1">
         <div class="row justify-content-center align-items-center">
+            <!-- Text Section -->
             <div class="col-md-6">
-                <h1 class="display-4 text-neon">Edgar</h1>
-                <p class="lead">Soy un desarrollador de videojuegos apasionado, basado en Ciudad de México. Me especializo en crear experiencias interactivas y emocionantes que capturan la imaginación de los jugadores.</p>
-                <a href="./html/projects.html" class="btn btn-neon mt-3 font-zen-dots">Projects</a>
+                <h1 class="display-4 text-neon">Hey, I’m Edgar</h1>
+                <p class="lead">I’m an android & game developer. I live in Mexico City. I’m also known as Phantom Code.</p>
+                <a href="./html/projects.html" class="custom-link d-block mt-3">See my projects</a>
+                <a href="./html/about.html" class="custom-link d-block mt-3">More about me</a>
             </div>
+            <!-- Image Section -->
             <div class="col-md-6 text-center">
-                <!-- Imagen de ejemplo -->
-                <img src="https://media.discordapp.net/attachments/1348869611470192735/1348869677996314718/Imagen_de_WhatsApp_2025-03-10_a_las_22.03.27_c7fb5ce0.jpg?ex=67d10848&is=67cfb6c8&hm=a3793949cde96f8a66265d1f04f2d4dea8a05f5f15b956158b144eecb77ca87c&=&format=webp&width=642&height=856" class="img-fluid custom-img" alt="Foto de Edgar">
-            </div>            
+                <img src="https://media.discordapp.net/attachments/1348869611470192735/1348869677996314718/Imagen_de_WhatsApp_2025-03-10_a_las_22.03.27_c7fb5ce0.jpg?ex=67d10848&is=67cfb6c8&hm=a3793949cde96f8a66265d1f04f2d4dea8a05f5f15b956158b144eecb77ca87c&=&format=webp&width=642&height=856"
+                     class="img-fluid custom-img" alt="Foto de Edgar">
+            </div>
         </div>
     </div>
 
-    <!-- Pie de Página -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-5 mt-auto">
         <div class="container text-center">
-            <h5 class="text-neon mb-4">Contáctame</h5>
-            <p><a href="mailto:edgarpinto010203@gamil.com" class="text-white"><i class="fas fa-envelope fa-lg"></i> edgarpinto010203@gamil.com</a></p>
+            <h5 class="text-neon mb-4">Contact me</h5>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mnnpnpzd" method="POST" class="text-left mx-auto mb-4" style="max-width: 400px;">
+                <div class="form-group">
+                    <label for="name" class="text-neon">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-neon">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-neon">Message</label>
+                    <textarea name="message" id="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-neon btn-block">Send</button>
+            </form>
+
+           
+
+            <!-- Social Media Links -->
             <div class="d-flex justify-content-center">
                 <a href="https://www.instagram.com/edgarpinto03?igsh=MThvanJrMWEyd2Q0dA==" class="text-white mx-4"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://github.com/EdgarPinto38" class="text-white mx-4"><i class="fab fa-github fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/edgar-pinto-0a25232b5/" class="text-white mx-4"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://skullsociety.itch.io/" class="text-white mx-4"><i class="fab fa-itch-io fa-2x"></i></a>
+                <a href="https://phantom-code.itch.io/" class="text-white mx-4"><i class="fab fa-itch-io fa-2x"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS y dependencias -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Font Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>

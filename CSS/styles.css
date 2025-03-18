@@ -1,32 +1,29 @@
-/* Fondo gris muy oscuro */
+/* Estilo global del fondo y textos */
 body, .bg-dark {
     background-color: #1c1c1c !important;
     color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Texto blanco suave */
+/* Estilo de textos */
 .text-white {
     color: #f5f5f5 !important;
 }
 
-/* Títulos en fuente moderna y texto verde neón */
 .text-neon {
     font-family: 'Zen Dots', sans-serif;
     color: #0cff00 !important;
 }
 
-/* Fuente Zen Dots para Navbar y botones */
 .font-zen-dots {
     font-family: 'Zen Dots', sans-serif;
 }
 
-/* Texto normal */
 .text-normal {
     font-size: 1.1rem;
 }
 
-/* Botones verde neón */
+/* Estilo de botones */
 .btn-neon {
     color: #1c1c1c;
     background-color: #0cff00;
@@ -46,6 +43,7 @@ body, .bg-dark {
 .card {
     background-color: #1c1c1c;
     border: 1px solid #0cff00;
+    border-radius: 10px;
 }
 
 .card .card-title {
@@ -66,7 +64,25 @@ body, .bg-dark {
     background-color: #000;
 }
 
-/* Separación entre contenido y pie de página */
+/* Estilo para imágenes en tarjetas */
+.custom-card-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.custom-card-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Espaciado global */
 .mt-5 {
     margin-top: 3rem !important;
 }
@@ -75,7 +91,7 @@ body, .bg-dark {
     margin-bottom: 3rem !important;
 }
 
-/* Iconos */
+/* Estilo de íconos */
 .fa-lg {
     font-size: 1.5rem;
 }
@@ -84,62 +100,108 @@ body, .bg-dark {
     font-size: 2rem;
 }
 
-.fa-instagram:hover {
-    color: #0cff00;
-}
-
-.fa-github:hover {
-    color: #0cff00;
-}
-
-.fa-linkedin:hover {
-    color: #0cff00;
-}
-
+.fa-instagram:hover, 
+.fa-github:hover, 
+.fa-linkedin:hover, 
 .fa-itch-io:hover {
     color: #0cff00;
 }
 
-/* Navbar fija */
+/* Estilo del navbar */
 .navbar {
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
-/* Espacio para compensar la navbar fija */
 .mt-5.pt-5 {
     margin-top: 5rem !important;
     padding-top: 2rem !important;
 }
 
-/* Estilo de la opción activa en el navbar */
 .nav-link.active {
     color: #0cff00 !important;
     border-bottom: 2px solid #0cff00;
 }
 
-/* Estilo personalizado para la imagen */
+/* Estilo personalizado para la imagen principal */
 .custom-img {
-    max-width: 70%; /* Escala la imagen al ancho máximo disponible */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    border-radius: 15px; /* Bordes redondeados */
+    max-width: 70%;
+    height: auto;
+    border-radius: 15px;
 }
 
-/* Estilo personalizado para las imágenes de la sección "About" */
+/* Configuración de diseño para la sección 'About' */
+.about-img-container {
+    position: static;
+    flex: 0 0 300px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.about-content {
+    flex: 1;
+    margin-left: 0;
+}
+
 .about-img {
-    max-width: 50%; /* Ajusta el ancho según tus necesidades */
-    height: auto; /* Ajusta la altura según tus necesidades */
-    border-radius: 15px; /* Bordes redondeados */
-    object-fit: scale-down; /* Escala la imagen sin recortar */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    background-color: #000;
 }
 
-/* Estilo personalizado para las imágenes de las tarjetas */
-.custom-card-img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 5%;
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: nowrap;
 }
 
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
 
+    .about-img-container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .about-content {
+        margin-left: 0;
+    }
+}
+
+/* Estilo para recuadros */
+.neon-box {
+    border: 2px solid #0cff00;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: rgba(28, 28, 28, 0.9);
+}
+
+/* Estilo para listados con íconos */
+ul.list-unstyled li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #0cff00;
+}
+
+/* Estilo para enlaces neón */
+.custom-link {
+    color: #0cff00;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+    color: #0cff00;
+    transform: scale(1.05);
+}
